@@ -1,9 +1,9 @@
 <?
-
 // --------------------------------------------------------------
-// Classe : sdk_eedclientinfo
+//  eedclientinfo
+// --------------------------------------------------------------
 // Auteur : Benjamin B. (Benj70b)
-// Git	  : https://github.com/2bprog/eedomus-snippet/php
+// Git	  : https://github.com/2bprog/eedomus-snippet
 // --------------------------------------------------------------
 // Information sur le type d'interface utilsé 
 //

@@ -1,4 +1,2 @@
-Extrait de code pour l'eedomus
-
-* [php](https://github.com/2bprog/eedomus-snippet/php
+Extrait de code php et javascript pour l'eedomus
 

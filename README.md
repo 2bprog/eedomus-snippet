@@ -1,4 +1,5 @@
 Extrait de code pour l'eedomus
 
-* [php](https://github.com/2bprog/eedomus-snippet/php
+* [Php](https://github.com/2bprog/eedomus-snippet/php)
+* [Javascript](https://github.com/2bprog/eedomus-snippet/javascript)
 

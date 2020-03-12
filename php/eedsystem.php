@@ -7,8 +7,26 @@
 // --------------------------------------------------------------
 // fonctions avec une orientation systeme
 // --------------------------------------------------------------
+// function sdk_syscheckvalue($api,$val,$nbretry)
 // function sdk_syssleepms($ms)
 // --------------------------------------------------------------
+
+function sdk_syscheckvalue($api,$val,$nbretry)
+{
+ 
+    $i=0;
+    $nbretry = abs($nbretry);
+    if ($nbretry > 10000) $nbretry = 10000;
+    while ($i < $nbretry)
+    {
+        $i++;
+        $valr = getvalue($api);
+        usleep(10000);
+        if ($valr['value'] == $val)  break;
+    }        
+    return $i < $nbretry;
+}
+
 
 function sdk_syssleepms($ms)
 {
@@ -19,5 +37,6 @@ function sdk_syssleepms($ms)
 		usleep(1000); //wait 1ms 
 	}
 }
+
 
 ?>

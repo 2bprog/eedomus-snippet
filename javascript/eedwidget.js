@@ -18,7 +18,6 @@ function eedw_showPanel(PanelIdtoShow, PanelsClass)
 }
 
 /*
-
 function setheight(totalHeight, headerHeight, mainElement, panelclass)
 
 fixe la hauteur des elements en fonction de la hauteur d'une entete (optionnel)
@@ -44,13 +43,13 @@ function eedw_setheight(totalHeight, headerHeight, mainElement, panelclass)
 }
 
 /*
-function eedw_adjustiframe(brequesturi)
+function eedw_adjustiframe(requesturi)
 
 ajustment de l'iframe en largeur à 100% 
 ceci s'effectue avec une recherche sur l'url du widget
 en php => $_SERVER['REQUEST_URI']
 */
-function eedw_adjustiframe(brequesturi)
+function eedw_adjustiframe(requesturi)
 {
     if (window.parent !== null)
     {
@@ -60,7 +59,7 @@ function eedw_adjustiframe(brequesturi)
             // recup iframe
             const url = new URL(iframe.src);
             var framesrc = url.pathname + url.search;
-            if ( framesrc === brequesturi )
+            if ( framesrc === requesturi )
             {
                 // trouvé => redimentionnement + sauvegarde de la hauteur
                 iframe.style.width='100%';

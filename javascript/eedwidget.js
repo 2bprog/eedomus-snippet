@@ -25,7 +25,7 @@ fixe la hauteur des elements en fonction de la hauteur d'une entete (optionnel)
 pour totalHeight utiliser visualViewport.height
 
 */
-function eedw_setheight(totalHeight, headerHeight, mainElement, panelclass)
+function eedw_setheight(totalHeight, headerHeight, mainElement, panelclass, marge)
 {
 
     document.body.style.height = totalHeight;
@@ -37,7 +37,7 @@ function eedw_setheight(totalHeight, headerHeight, mainElement, panelclass)
     {
         x[i].style.position  = "absolute";
         x[i].style.top = headerHeight;
-        x[i].style.height = totalHeight - (headerHeight  + 2);
+        x[i].style.height = totalHeight - (headerHeight  + marge);
         x[i].style.width = "100%";
     }
 }

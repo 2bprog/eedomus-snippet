@@ -5,7 +5,7 @@ class sdk_eedclientinfo
 ```
 
 ## eedconvert.php
-Fonction pour les conversions
+Fonctions pour les conversions
 ```
 function sdk_conv_ansiUtf8($valor) 
 function sdk_conv_Utf8ansi($valor) 
@@ -23,6 +23,7 @@ function sdk_strbetween ($this, $that, $inthat)
 ## eedsystem.php
 fonctions avec une orientation systeme
 ```
+function sdk_syscheckvalue($api,$val,$nbretry)
 function sdk_syssleepms($ms)
 ```
 
